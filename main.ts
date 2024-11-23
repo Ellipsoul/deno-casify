@@ -54,13 +54,18 @@ console.log(green(toUpperCaseWithC(flags.text)));
 
 console.log();
 
+// Print the text in kebab case if the kebab flag is set
 console.log('Kebab casing');
 flags.kebab && console.log(blue(toKebabCase(flags.text)));
 
 console.log();
 
+// Print the text in snake case if the snake flag is set
 console.log('Snake casing');
 flags.snake && console.log(magenta(toSnakeCase(flags.text)));
 
 console.log();
+
+// Print the flags
+console.log('Flags');
 console.log(flags);
