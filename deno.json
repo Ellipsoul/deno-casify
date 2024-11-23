@@ -3,6 +3,33 @@
     "dev": "deno run --watch main.ts"
   },
   "imports": {
-    "@std/assert": "jsr:@std/assert@1"
+    "@std/assert": "jsr:@std/assert@1",
+    "@std/cli": "jsr:@std/cli@^1.0.6",
+    "@std/fmt": "jsr:@std/fmt@^1.0.3",
+    "@std/text": "jsr:@std/text@^1.0.8"
+  },
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "lib": ["dom", "deno.ns"]
+  },
+  "lint": {
+    "include": ["**/*.ts"],
+    "exclude": [],
+    "rules": {
+      "tags": ["recommended"],
+      "include": ["ban-untagged-todo"]
+    }
+  },
+  "fmt": {
+    "useTabs": false,
+    "lineWidth": 80,
+    "indentWidth": 2,
+    "semiColons": true,
+    "singleQuote": true,
+    "proseWrap": "preserve",
+    "include": ["**/*.ts"],
+    "exclude": []
   }
 }
