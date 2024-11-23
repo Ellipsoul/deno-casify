@@ -3,6 +3,7 @@
 A command-line interface tool built exclusively with Deno that:
 - Transforms text into different cases
 - Calls an uppercase implementation written in native C
+- Outputs text in different colours and backgrounds, supported by Deno's standard text library
 
 ## Features
 
@@ -15,6 +16,20 @@ A command-line interface tool built exclusively with Deno that:
 - Run anywhere using pre-compiled binaries (Mac Silicon and Windows)
 
 ## Usage
+
+### Clone Repository
+
+```sh
+git clone https://github.com/Ellipsoul/deno-casify.git
+```
+
+or
+
+```sh
+gh repo clone Ellipsoul/deno-casify
+```
+
+### Run Commands
 
 Example on Mac:
 
